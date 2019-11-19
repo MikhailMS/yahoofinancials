@@ -75,23 +75,23 @@ def test_yf_fundamentals(setup):
                                                                                  ['income', 'cash', 'balance'])
     # Single stock check
     result = check_fundamental(single_balance_sheet_data_qt, 'bal')
-    assert result == True
+    assert result is True
 
     result = check_fundamental(single_income_statement_data_qt, 'inc')
-    assert result == True
+    assert result is True
 
     result = check_fundamental(single_all_statement_data_qt, 'all')
-    assert result == True
+    assert result is True
 
     # Multi stock check
     result = check_fundamental(multi_balance_sheet_data_qt, 'bal')
-    assert result == True
+    assert result is True
 
     result = check_fundamental(multi_income_statement_data_qt, 'inc')
-    assert result == True
+    assert result is True
 
     result = check_fundamental(multi_all_statement_data_qt, 'all')
-    assert result == True
+    assert result is True
 
 def test_yf_historical_price(setup):
     '''
